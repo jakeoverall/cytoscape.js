@@ -139,7 +139,7 @@ CRp.drawInscribedImage = function( context, img, node, index, nodeOpacity ){
         context.clip();
       }
     }
-
+    context.rotate(node.data().rot * Math.PI / 4);
     r.safeDrawImage( context, img, 0, 0, imgW, imgH, x, y, w, h );
 
     if( shouldClip ){

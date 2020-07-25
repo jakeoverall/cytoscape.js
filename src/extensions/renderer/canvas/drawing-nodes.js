@@ -286,9 +286,8 @@ CRp.drawNode = function( context, node, shiftToOriginWithBb, drawLabel = true, s
   if( usePaths ){
     context.translate( -pos.x, -pos.y );
   }
-
+  
   drawText();
-
   drawOverlay();
 
   //
